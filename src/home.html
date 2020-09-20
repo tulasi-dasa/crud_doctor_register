@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/home.css">
+
+</head>
+<body>
+    <header>
+    
+       
+
+    </header>
+
+    <form id="formulario"  action="">
+        <h1>Cadastro Médico</h1>
+
+
+        <fieldset>
+            <div class="field"> 
+                <label for="name">Nome do médico</label>
+                <input id="name" type="text" name="name" required>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="crm">CRM</label>
+                    <input id="crm" type="number" name="crm" required>
+                </div>
+                <div class="field">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" type="number" name="telefone" required>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="state">Estado</label>
+                     <select id="uf" name="uf" required>
+                        <option value="">Selecione o estado</option>
+                     </select>
+
+                     <input type="hidden" name="state">
+                    
+                </div>
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <select id="cidade" name="city" disabled required>
+                        <option value="">Selecione a cidade</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="primeiraEspecialidade">Primeira especialidade</label>
+                     <select id="primeiraEspecialidade"  name="primeiraEspecialidade">
+                        <option value="">Selecione a primeira especialidade</option>
+                        <option value="ALERGOLOGIA">ALERGOLOGIA</option>
+                        <option value="ANGIOLOGIA">ANGIOLOGIA</option>
+                        <option value="BUCO MAXILO">⮤ BUCO MAXILO</option>
+                        <option value="CARDIOLOGIA CLÍNICA">⮤ CARDIOLOGIA CLÍNICA</option>
+                        <option value="CARDIOLOGIA INFANTIL">⮤ CARDIOLOGIA INFANTIL</option>
+                        <option value="CIRURGIA CABEÇA E PESCOÇO">CIRURGIA CABEÇA E PESCOÇO</option>
+                        <option value="CIRURGIA CARDÍACA">CIRURGIA CARDÍACA</option>
+                        <option value="CIRURGIA DE TORAX">CIRURGIA DE TORAX</option>
+                        <option value="CIRURGIA GERAL">CIRURGIA GERAL</option>
+                        <option value="CIRURGIA PEDIÁTRICA">CIRURGIA PEDIÁTRICA</option>
+                        <option value="CIRURGIA PLÁSTICA">CIRURGIA PLÁSTICA</option>
+                        <option value="CIRURGIA TORÁCIC">CIRURGIA TORÁCIC</option>
+                        <option value="CIRURGIA VASCULAR">CIRURGIA VASCULAR</option>
+                        <option value="CLÍNICA MÉDICA">CLÍNICA MÉDICA</option>
+                     </select>
+                </div>
+                
+                <div class="field">
+                    <label for="segundaEspecialidade">Segunda especialidade</label>
+                    <select id="segundaEspecialidade"   name="segundaEspecialidade">
+                        <option value="">Selecione a primeira especialidade</option>
+                        <option value="ALERGOLOGIA">ALERGOLOGIA</option>
+                        <option value="ANGIOLOGIA">ANGIOLOGIA</option>
+                        <option value="BUCO MAXILO">⮤ BUCO MAXILO</option>
+                        <option value="CARDIOLOGIA CLÍNICA">⮤ CARDIOLOGIA CLÍNICA</option>
+                        <option value="CARDIOLOGIA INFANTIL">⮤ CARDIOLOGIA INFANTIL</option>
+                        <option value="CIRURGIA CABEÇA E PESCOÇO">CIRURGIA CABEÇA E PESCOÇO</option>
+                        <option value="CIRURGIA CARDÍACA">CIRURGIA CARDÍACA</option>
+                        <option value="CIRURGIA DE TORAX">CIRURGIA DE TORAX</option>
+                        <option value="CIRURGIA GERAL">CIRURGIA GERAL</option>
+                        <option value="CIRURGIA PEDIÁTRICA">CIRURGIA PEDIÁTRICA</option>
+                        <option value="CIRURGIA PLÁSTICA">CIRURGIA PLÁSTICA</option>
+                        <option value="CIRURGIA TORÁCIC">CIRURGIA TORÁCIC</option>
+                        <option value="CIRURGIA VASCULAR">CIRURGIA VASCULAR</option>
+                        <option value="CLÍNICA MÉDICA">CLÍNICA MÉDICA</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+        </fieldset>
+
+        <a onclick="teste()">Enviar cadastro</a>
+        
+    </form>
+
+    <script src="../public/home.js"></script>
+</body>
+</html>
